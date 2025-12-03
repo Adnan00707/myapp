@@ -4,6 +4,8 @@ import "./index.css";
 import App from "./App";
 import Landing from "./Landing";
 import Login from "./Login";
+import ProductDetails from "./ProductDetails";
+import Checkout from "./Checkout";
 
 import { HashRouter, Routes, Route } from "react-router-dom";
 
@@ -14,6 +16,8 @@ root.render(
       <Route path="/" element={<Landing />} />
       <Route path="/login" element={<Login />} />
       <Route path="/app" element={<App />} />
+      <Route path="/product/:id" element={<ProductDetails />} />
+      <Route path="/checkout" element={<Checkout />} />
     </Routes>
   </HashRouter>
 );
